@@ -5,7 +5,7 @@
  */
 
 :root {
-  --accent: #2337ff;
+  --accent: #35b961;
   --accent-dark: #000d8a;
   --black: 15, 18, 25;
   --gray: 96, 115, 159;
@@ -18,14 +18,14 @@
 }
 @font-face {
   font-family: "Darumadrop One";
-  src: url("/fonts/DarumadropOne-Regular.ttf") format("ttf");
+  src: url("/fonts/DarumadropOne-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Darumadrop One";
-  src: url("/fonts/DarumadropOne-Regular.ttf") format("ttf");
+  src: url("/fonts/DarumadropOne-Regular.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
