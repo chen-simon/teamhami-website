@@ -5,7 +5,12 @@ import { SITE_TITLE } from '../consts';
 
 <header>
 	<nav>
-		<h2><a href="/">{SITE_TITLE}</a></h2>
+		<h2><a href="/">
+			<span class="logo-title">
+      			<img class="logo-img" width="20" height="20" src="logo.png" alt="Logo" />
+      			{SITE_TITLE}
+    		</span>
+		</a></h2>
 		<div class="internal-links">
 			<HeaderLink href="/blog">blog</HeaderLink>
 			<HeaderLink href="/games">games</HeaderLink>
@@ -45,6 +50,16 @@ import { SITE_TITLE } from '../consts';
 	h2 a.active {
 		text-decoration: none;
 	}
+	  h2 a .logo-title {
+    display: flex;
+    align-items: center;
+    gap: 0.35em;
+  }
+  .logo-img {
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
 	nav {
 		display: flex;
 		align-items: center;
@@ -69,4 +84,17 @@ import { SITE_TITLE } from '../consts';
 			display: none;
 		}
 	}
+	a {
+        display: inline-block;
+        text-decoration: none;
+        transition: transform 0.15s cubic-bezier(.4,1.5,.5,1);
+    }
+    a:hover,
+    a:focus-visible {
+        transform: scale(1.08);
+    }
+    a.active {
+        font-weight: bolder;
+        text-decoration: underline;
+    }
 </style>

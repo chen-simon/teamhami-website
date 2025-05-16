@@ -21,7 +21,9 @@ const games = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
-    releaseYear: z.number(),
+    // Transform string to Date object
+    pubDate: z.coerce.date(),
+    updatedDate: z.coerce.date().optional(),
     heroImage: z.string().optional(),
   }),
 });
